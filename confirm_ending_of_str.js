@@ -1,10 +1,5 @@
 function confirmEnding(str, target) {
-	let slice = str.substr(str.length - target.length, target.length);
-	if (slice === target) {
-		return true;
-	} else {
-		return false;
-	}
+	return str.substr(-target.length) === target;
 }
 
 console.log(confirmEnding("Open sesame", "sesame"));
