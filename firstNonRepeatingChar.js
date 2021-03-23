@@ -14,11 +14,14 @@
 // }
 
 function firstNonRepeatedCharacters(string) {
+	// let result = []
 	for (let i = 0; i < string.length; i++) {
 		if (string.lastIndexOf(string[i]) == string.indexOf(string[i])) {
+			// result.push(string[i])
 			return string[i];
 		}
 	}
+	// or return result array
 	return null;
 }
 
