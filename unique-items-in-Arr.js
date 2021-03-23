@@ -18,3 +18,7 @@ function uniqueElements(array) {
 
 	return uniques;
 }
+
+const test = [1, "w", 2, 7, 2, "w", 8, 1, "e", 44, 1];
+
+console.log(uniqueElements(test));
